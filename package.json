@@ -13,7 +13,7 @@
     "build": "lerna run build",
     "test": "lerna run test",
     "lint": "lerna run lint",
-    "doc": "npm run doc:web && npm run doc:markdown",
+    "doc": "npm run doc:web",
     "doc:web": "npx typedoc",
     "doc:markdown": "npx typedoc --options typedoc.markdown.js",
     "doc:serve": "npx http-server docs/html",
