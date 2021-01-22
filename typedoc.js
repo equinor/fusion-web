@@ -1,7 +1,7 @@
 module.exports = {
   mode: 'modules',
   name: 'Fusion Core',
-  out: 'docs/html',
+  out: 'docs',
   theme: 'node_modules/typedoc-neo-theme/bin/default',
   // includeDeclarations: true,
   // includeVersion: true,
@@ -20,7 +20,7 @@ module.exports = {
     'typedoc-neo-theme'
   ],
   source: [{
-    path: "https://github.com/equinor/fusion-api//blob/master/packages/",
+    path: "https://github.com/equinor/fusion-core/blob/master/packages/",
     line: "L"
   }]
 }
