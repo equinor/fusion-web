@@ -11,6 +11,7 @@
   "license": "ISC",
   "modules": "dist/index.js",
   "main": "dist/index.js",
+  "directories": {},
   "publishConfig": {
     "access": "public"
   },
