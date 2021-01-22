@@ -1,0 +1,19 @@
+{
+  "version": "independent",
+  "command": {
+    "bootstrap": {
+      "hoist": true,
+      "npmClientArgs": ["--no-package-lock"]
+    },
+    "publish": {
+      "conventionalCommits": true,
+      "ignoreChanges": ["*.spec.ts", "*.md"],
+      "message": "chore(release): publish"
+    }
+  },
+  "packages": [
+    "packages/*",
+    "packages/*/*",
+    "demo/*"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "allowSyntheticDefaultImports": true,
+        "declaration": true,
+        "module": "ESNext",
+        "target": "ES6",
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "skipLibCheck": true,
+        "composite": true,
+        "baseUrl": "./packages",
+        "sourceMap": true,
+        "rootDir": ".",
+        "paths": {
+            "@equinor/fusion-web-*": [
+                "*/src"
+            ],
+        }
+    }
+}
