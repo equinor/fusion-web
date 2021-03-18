@@ -9,17 +9,17 @@ export abstract class StyleProperty<T = any, A extends string = string> {
     return `--fusion-${element}__${module}`;
   }
 
-  static makeCss(obj: Partial<Properties>) {
+  static makeCss(obj: Properties) {
     return Object.keys(obj)
       .map((x) => `${camel2kebab(x)}: ${obj[x as keyof Properties]}`)
       .join(';');
   }
 
-  static makeVariable({ attribute, value }: StyleAttribute) {
+  static makeVariable({ attribute, value }: StyleAttribute): string {
     return `var(${[attribute, value].filter((x) => !!x).join(',')})`;
   }
 
-  static extractVariables(styles: Record<string, StyleProperty>): string[] {
+  static extractVariables<T extends StyleProperty>(styles: Record<string, T>): string[] {
     return Object.values(styles).reduce((cur, value) => cur.concat(value.variables), [] as string[]);
   }
 
@@ -27,7 +27,7 @@ export abstract class StyleProperty<T = any, A extends string = string> {
 
   abstract get attributes(): Record<A, StyleAttribute>;
 
-  get style(): Partial<Properties> {
+  get style(): Properties {
     const { value, attributes } = this;
     return {
       ...value,
@@ -39,7 +39,14 @@ export abstract class StyleProperty<T = any, A extends string = string> {
   }
 
   get css(): string {
-    return StyleProperty.makeCss(this.style);
+    const { attributes, style } = this;
+    return StyleProperty.makeCss({
+      ...style,
+      ...(Object.keys(attributes) as A[]).reduce(
+        (cur, key) => Object.assign(cur, { [key]: StyleProperty.makeVariable(attributes[key]) }),
+        {}
+      ),
+    });
   }
 
   get variables(): string[] {

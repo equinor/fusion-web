@@ -1,4 +1,5 @@
 import { tokens } from '@equinor/eds-tokens';
+import { Properties } from 'csstype';
 import StyleProperty from '../style-property';
 
 export type Color = {
@@ -7,7 +8,9 @@ export type Color = {
   rgba: string;
 };
 
-export class ColorStyleProperty extends StyleProperty<Color, 'color'> {
+export type ColorStyleAttribute = 'color';
+
+export class ColorStyleProperty extends StyleProperty<Color, ColorStyleAttribute> {
   get attributes() {
     const {
       name,
@@ -16,6 +19,12 @@ export class ColorStyleProperty extends StyleProperty<Color, 'color'> {
     const attribute = StyleProperty.makeCssVar('color', name);
     return {
       color: { attribute, value: rgba },
+    };
+  }
+
+  get style(): Properties {
+    return {
+      color: this.value.rgba,
     };
   }
 }
