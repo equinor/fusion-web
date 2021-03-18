@@ -35,7 +35,7 @@
     "url": "https://github.com/equinor/fusion-api/issues"
   },
   "dependencies": {
-    "@equinor/eds-tokens": "^0.5.5",
+    "@equinor/eds-tokens": "0.5.5",
     "csstype": "^3.0.7"
   },
   "devDependencies": {
