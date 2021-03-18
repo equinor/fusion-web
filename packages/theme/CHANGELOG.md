@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.1.0-alpha.3](https://github.com/equinor/fusion-web/compare/@equinor/fusion-web-theme@0.1.0-alpha.2...@equinor/fusion-web-theme@0.1.0-alpha.3) (2021-03-18)
+
+
+### Features
+
+* add spacing ([335f5f2](https://github.com/equinor/fusion-web/commit/335f5f2b571bda58fc419af5874bf778412b1add))
+
+
+
+
+
 # [0.1.0-alpha.2](https://github.com/equinor/fusion-web/compare/@equinor/fusion-web-theme@0.1.0-alpha.1...@equinor/fusion-web-theme@0.1.0-alpha.2) (2021-03-18)
 
 
