@@ -4,7 +4,7 @@ import StyleProperty from '../style-property';
 
 export type SpacingStyleAttribute = 'padding';
 
-export class ColorStyleProperty extends StyleProperty<string, SpacingStyleAttribute> {
+export class SpacingStyleProperty extends StyleProperty<string, SpacingStyleAttribute> {
   get attributes() {
     const { name, value } = this;
     const attribute = StyleProperty.makeCssVar('color', name);
@@ -23,10 +23,10 @@ export class ColorStyleProperty extends StyleProperty<string, SpacingStyleAttrib
 const createStyleProperty = <T extends Record<string, string>, Tkey extends keyof T>(
   obj: T,
   name: string
-): Record<Tkey, ColorStyleProperty> =>
+): Record<Tkey, SpacingStyleProperty> =>
   Object.keys(obj).reduce(
-    (cur, key) => Object.assign(cur, { [key]: new ColorStyleProperty(`${name}-${key}`, obj[key]) }),
-    {} as Record<Tkey, ColorStyleProperty>
+    (cur, key) => Object.assign(cur, { [key]: new SpacingStyleProperty(`${name}-${key}`, obj[key]) }),
+    {} as Record<Tkey, SpacingStyleProperty>
   );
 
 export const spacing = {
@@ -34,7 +34,7 @@ export const spacing = {
 };
 
 export const spacingVariables = Object.values(spacing).reduce(
-  (cur, value) => cur.concat(ColorStyleProperty.extractVariables(value)),
+  (cur, value) => cur.concat(SpacingStyleProperty.extractVariables(value)),
   [] as string[]
 );
 
