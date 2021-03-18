@@ -1,6 +1,11 @@
 {
   "version": "independent",
   "command": {
+    "version": {
+      "allowBranch": ["master", "feat/*", "feature/*"],
+      "conventionalCommits": true,
+      "ignoreChanges": ["*.spec.ts", "*.md"]
+    },
     "bootstrap": {
       "hoist": true,
       "npmClientArgs": ["--no-package-lock"]
