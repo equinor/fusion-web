@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.1.0-alpha.4](https://github.com/equinor/fusion-web/compare/@equinor/fusion-web-theme@0.1.0-alpha.3...@equinor/fusion-web-theme@0.1.0-alpha.4) (2021-03-18)
+
+
+### Bug Fixes
+
+* class name for spacing ([da7dff8](https://github.com/equinor/fusion-web/commit/da7dff8f02c16bfe10bc925677747ccd84133550))
+
+
+
+
+
 # [0.1.0-alpha.3](https://github.com/equinor/fusion-web/compare/@equinor/fusion-web-theme@0.1.0-alpha.2...@equinor/fusion-web-theme@0.1.0-alpha.3) (2021-03-18)
 
 
