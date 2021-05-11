@@ -1,6 +1,7 @@
 name: Generate Docs
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - master
@@ -43,6 +44,7 @@ jobs:
         run: |
           rm -rf docs
           npm run doc:web
+          touch docs/.nojekyll
 
       - name: Config git user
         run: |
