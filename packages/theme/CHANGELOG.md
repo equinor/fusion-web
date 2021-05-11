@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.1.0](https://github.com/equinor/fusion-web/compare/@equinor/fusion-web-theme@0.1.0-alpha.4...@equinor/fusion-web-theme@0.1.0) (2021-05-11)
+
+
+### Bug Fixes
+
+* allow attribute extraction ([3792608](https://github.com/equinor/fusion-web/commit/379260833899bcf33af48643dcbda1b8fae8a699))
+
+
+
+
+
 # [0.1.0-alpha.4](https://github.com/equinor/fusion-web/compare/@equinor/fusion-web-theme@0.1.0-alpha.3...@equinor/fusion-web-theme@0.1.0-alpha.4) (2021-03-18)
 
 
