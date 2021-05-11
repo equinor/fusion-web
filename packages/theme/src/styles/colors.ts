@@ -1,6 +1,6 @@
 import { tokens } from '@equinor/eds-tokens';
 import { Properties } from 'csstype';
-import StyleProperty from '../style-property';
+import StyleProperty, { StyleAttribute } from '../style-property';
 
 export type Color = {
   hex: string;
@@ -11,7 +11,7 @@ export type Color = {
 export type ColorStyleAttribute = 'color';
 
 export class ColorStyleProperty extends StyleProperty<Color, ColorStyleAttribute> {
-  get attributes() {
+  get attributes(): Record<ColorStyleAttribute, StyleAttribute> {
     const {
       name,
       value: { rgba },
