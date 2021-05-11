@@ -12,7 +12,7 @@ module.exports = {
   plugin: ['typedoc-plugin-lerna-packages', 'typedoc-neo-theme'],
   source: [
     {
-      path: 'https://github.com/equinor/fusion-core/blob/master/packages/',
+      path: 'https://github.com/equinor/fusion-core/blob/master/',
       line: 'L',
     },
   ],
