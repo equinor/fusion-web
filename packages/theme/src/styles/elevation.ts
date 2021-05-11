@@ -1,18 +1,19 @@
 import { tokens } from '@equinor/eds-tokens';
 import { StyleAttribute, StyleProperty } from '../style-property';
+import { Properties } from 'csstype';
 
 export type ElevationType = keyof typeof tokens.elevation;
 export type ElevationAttribute = 'shadow';
 
 export class ElevationStyleProperty extends StyleProperty<string, ElevationAttribute> {
-  get attributes(): Record<'shadow', StyleAttribute> {
+  get attributes(): Record<ElevationAttribute, StyleAttribute> {
     const { name, value } = this;
     const attribute = ElevationStyleProperty.makeCssVar('elevation', name);
     return {
       shadow: { attribute, value },
     };
   }
-  get style() {
+  get style(): Properties {
     return {
       boxShadow: StyleProperty.makeVariable(this.attributes.shadow),
     };
@@ -20,7 +21,7 @@ export class ElevationStyleProperty extends StyleProperty<string, ElevationAttri
 }
 
 const createStyleProp = (type: ElevationType): ElevationStyleProperty => {
-  return new ElevationStyleProperty(type, tokens.elevation[type]);
+  return new ElevationStyleProperty(type as string, tokens.elevation[type]);
 };
 
 const types = Object.keys(tokens.elevation) as ElevationType[];
