@@ -5,11 +5,11 @@ const camel2kebab = (x: string) => x.replace(/([a-z0-9])([A-Z])/g, '$1-$2').toLo
 export type StyleAttribute = { attribute: string; value?: string | number; base?: boolean };
 
 export abstract class StyleProperty<T = any, A extends string = string> {
-  static makeCssVar(element: string, module: string) {
+  static makeCssVar(element: string, module: string): string {
     return `--fusion-${element}__${module}`;
   }
 
-  static makeCss(obj: Properties) {
+  static makeCss(obj: Properties): string {
     return Object.keys(obj)
       .map((x) => `${camel2kebab(x)}: ${obj[x as keyof Properties]}`)
       .join(';');
@@ -57,11 +57,29 @@ export abstract class StyleProperty<T = any, A extends string = string> {
     return (Object.values(this.attributes) as StyleAttribute[]).filter((x) => include_base || !x.base);
   }
 
+  /**
+   * get a attribute as a css variable
+   *
+   * @example
+   * `my-class {
+   *    background: ${styles.colors.green.getVariable('color')}
+   * }`
+   */
+  public getVariable(name: A): string {
+    return StyleProperty.makeVariable(this.attributes[name]);
+  }
+
+  /**
+   * return all configured css varibles;
+   *
+   * @example
+   * `:root { ${styles.colors.green.getVariables().join(';')} }`
+   */
   public getVariables(include_base?: boolean): string[] {
     return this.getAttributes(include_base).map(({ attribute, value }) => [attribute, value].join(':'));
   }
 
-  public toString() {
+  public toString(): string {
     return this.css;
   }
 }
