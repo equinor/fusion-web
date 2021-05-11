@@ -42,7 +42,7 @@ jobs:
       - name: Build storybook
         run: |
           rm -rf docs
-          npm run doc:html
+          npm run doc:web
 
       - name: Config git user
         run: |
