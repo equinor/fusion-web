@@ -5,6 +5,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
+eslint-report.log*
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
@@ -77,3 +78,6 @@ yalc.lock
 # ignore lock file of packages - might include later, usally conflixt with hoisting
 packages/**/package-lock.json
 packages/**/dist
+
+docs
+
