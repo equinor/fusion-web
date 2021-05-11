@@ -1,13 +1,14 @@
 {
-  "name": "@equinor/fusion-web-msal",
-  "version": "0.1.0-alpha.0",
-  "description": "msal",
+  "name": "@equinor/fusion-web-theme",
+  "version": "0.1.0-alpha.4",
+  "description": "fusion web theme",
   "keywords": [
-    "msal",
-    "auth"
+    "style",
+    "theme",
+    "eds"
   ],
   "author": "odin thomas rochmann <odin.rochmann@gmail.com>",
-  "homepage": "https://github.com/equinor/fusion-web/tree/master/packages/msal#readme",
+  "homepage": "https://github.com/equinor/fusion-web/tree/master/packages/theme#readme",
   "license": "ISC",
   "modules": "dist/index.js",
   "main": "dist/index.js",
@@ -20,7 +21,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/equinor/fusion-web.git",
-    "directory": "packages/msal"
+    "directory": "packages/theme"
   },
   "scripts": {
     "test": "jest --passWithNoTests",
@@ -34,7 +35,8 @@
     "url": "https://github.com/equinor/fusion-api/issues"
   },
   "dependencies": {
-    "@azure/msal-browser": "^2.6.0"
+    "@equinor/eds-tokens": "0.5.5",
+    "csstype": "^3.0.7"
   },
   "devDependencies": {
     "rimraf": "^3.0.2"
