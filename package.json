@@ -10,9 +10,11 @@
     "url": "git+https://github.com/equinor/fusion-api.git"
   },
   "scripts": {
+    "install": "lerna bootstrap",
     "build": "lerna run build",
     "test": "lerna run test",
     "lint": "lerna run lint",
+    "lint:report": "eslint --output-file eslint-report.log.json --format json packages/*/src",
     "doc": "npm run doc:web",
     "doc:web": "npx typedoc",
     "doc:markdown": "npx typedoc --options typedoc.markdown.js",
