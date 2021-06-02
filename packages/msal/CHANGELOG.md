@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.1](https://github.com/equinor/fusion-web/compare/@equinor/fusion-web-msal@0.1.0...@equinor/fusion-web-msal@0.1.1) (2021-06-02)
+
+**Note:** Version bump only for package @equinor/fusion-web-msal
+
+
+
+
+
 # 0.1.0 (2021-05-11)
 
 **Note:** Version bump only for package @equinor/fusion-web-msal
