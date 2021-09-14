@@ -1,13 +1,16 @@
 import { tokens } from '@equinor/eds-tokens';
 import StyleProperty, { StyleAttribute } from '../style-property';
 
-type Typography = Pick<
-  CSSStyleDeclaration,
-  'color' | 'fontFamily' | 'fontSize' | 'fontWeight' | 'letterSpacing' | 'lineHeight' | 'textAlign'
->;
-type TypographyAttribute = keyof Pick<Typography, 'fontSize' | 'color'>;
+type TypographyAttribute =
+  | 'color'
+  | 'fontFamily'
+  | 'fontSize'
+  | 'fontWeight'
+  | 'letterSpacing'
+  | 'lineHeight'
+  | 'textAlign';
 
-export class TypographyStyleProperty extends StyleProperty<Typography, TypographyAttribute> {
+export class TypographyStyleProperty extends StyleProperty<CSSStyleDeclaration, TypographyAttribute> {
   get attributes() {
     const { name, value } = this;
     return {
@@ -19,15 +22,35 @@ export class TypographyStyleProperty extends StyleProperty<Typography, Typograph
         }),
         base: true,
       },
+      fontFamily: {
+        attribute: StyleProperty.makeCssVar('typography', `${name}-fontFamily`),
+        value: value.fontFamily,
+      },
       fontSize: {
         attribute: StyleProperty.makeCssVar('typography', `${name}-fontSize`),
         value: value.fontSize,
+      },
+      fontWeight: {
+        attribute: StyleProperty.makeCssVar('typography', `${name}-fontWeight`),
+        value: value.fontWeight,
+      },
+      letterSpacing: {
+        attribute: StyleProperty.makeCssVar('typography', `${name}-letterSpacing`),
+        value: value.letterSpacing,
+      },
+      lineHeight: {
+        attribute: StyleProperty.makeCssVar('typography', `${name}-lineHeight`),
+        value: value.lineHeight,
+      },
+      textAlign: {
+        attribute: StyleProperty.makeCssVar('typography', `${name}-textAlign`),
+        value: value.textAlign,
       },
     };
   }
 }
 
-const createStyleProperty = <T extends Record<string, Typography | any>, Tkey extends keyof T>(
+const createStyleProperty = <T extends Record<string, TypographyAttribute | any>, Tkey extends keyof T>(
   obj: T,
   name: string
 ): Record<Tkey, TypographyStyleProperty> =>
