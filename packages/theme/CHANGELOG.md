@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.3](https://github.com/equinor/fusion-web/compare/@equinor/fusion-web-theme@0.1.2...@equinor/fusion-web-theme@0.1.3) (2021-09-14)
+
+
+### Bug Fixes
+
+* fixed wrong var naming for spacing ([a0d0b0e](https://github.com/equinor/fusion-web/commit/a0d0b0e1767a150bc2905cb4cb9fb253f845aa2b))
+
+
+
+
+
 ## [0.1.2](https://github.com/equinor/fusion-web/compare/@equinor/fusion-web-theme@0.1.1...@equinor/fusion-web-theme@0.1.2) (2021-06-02)
 
 **Note:** Version bump only for package @equinor/fusion-web-theme
