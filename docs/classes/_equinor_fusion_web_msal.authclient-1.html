@@ -171,8 +171,8 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_equinor_fusion_web_msal.authclient-1.html#getaccountbyusername" class="tsd-kind-icon">getAccountByUsername</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_equinor_fusion_web_msal.authclient-1.html#getactiveaccount" class="tsd-kind-icon">getActiveAccount</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_equinor_fusion_web_msal.authclient-1.html#getallaccounts" class="tsd-kind-icon">getAllAccounts</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_equinor_fusion_web_msal.authclient-1.html#getdiscoveredauthority" class="tsd-kind-icon">getDiscoveredAuthority</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_equinor_fusion_web_msal.authclient-1.html#getlogger" class="tsd-kind-icon">getLogger</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_equinor_fusion_web_msal.authclient-1.html#gettokencache" class="tsd-kind-icon">getTokenCache</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_equinor_fusion_web_msal.authclient-1.html#handleredirectpromise" class="tsd-kind-icon">handleRedirectPromise</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_equinor_fusion_web_msal.authclient-1.html#initializewrapperlibrary" class="tsd-kind-icon">initializeWrapperLibrary</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_equinor_fusion_web_msal.authclient-1.html#login" class="tsd-kind-icon">login</a></li>
@@ -376,8 +376,8 @@
 								<p>Inherited from <a href="_equinor_fusion_web_msal.authclient-1.html">AuthClient</a>.<a href="_equinor_fusion_web_msal.authclient-1.html#acquiretokenpopup">acquireTokenPopup</a></p>
 								<ul>
 									<li>Defined in
-										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L98">
-											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:98
+										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L72">
+											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:72
 										</a>
 									</li>
 								</ul>
@@ -412,8 +412,8 @@
 								<p>Inherited from <a href="_equinor_fusion_web_msal.authclient-1.html">AuthClient</a>.<a href="_equinor_fusion_web_msal.authclient-1.html#acquiretokenredirect">acquireTokenRedirect</a></p>
 								<ul>
 									<li>Defined in
-										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L90">
-											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:90
+										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L64">
+											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:64
 										</a>
 									</li>
 								</ul>
@@ -451,15 +451,15 @@
 								<p>Inherited from <a href="_equinor_fusion_web_msal.authclient-1.html">AuthClient</a>.<a href="_equinor_fusion_web_msal.authclient-1.html#acquiretokensilent">acquireTokenSilent</a></p>
 								<ul>
 									<li>Defined in
-										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/PublicClientApplication.d.ts#L59">
-											node_modules/@azure/msal-browser/dist/app/PublicClientApplication.d.ts:59
+										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/PublicClientApplication.d.ts#L60">
+											node_modules/@azure/msal-browser/dist/app/PublicClientApplication.d.ts:60
 										</a>
 									</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
 								<div class="lead">
-									<p>Silently acquire an access token for a given set of scopes. Will use cached token if available, otherwise will attempt to acquire a new token from the network via refresh token.</p>
+									<p>Silently acquire an access token for a given set of scopes. Returns currently processing promise if parallel requests are made.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -487,8 +487,8 @@
 								<p>Inherited from <a href="_equinor_fusion_web_msal.authclient-1.html">AuthClient</a>.<a href="_equinor_fusion_web_msal.authclient-1.html#addeventcallback">addEventCallback</a></p>
 								<ul>
 									<li>Defined in
-										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L312">
-											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:312
+										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L168">
+											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:168
 										</a>
 									</li>
 								</ul>
@@ -525,8 +525,8 @@
 								<p>Inherited from <a href="_equinor_fusion_web_msal.authclient-1.html">AuthClient</a>.<a href="_equinor_fusion_web_msal.authclient-1.html#getaccountbyhomeid">getAccountByHomeId</a></p>
 								<ul>
 									<li>Defined in
-										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L197">
-											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:197
+										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L141">
+											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:141
 										</a>
 									</li>
 								</ul>
@@ -564,8 +564,8 @@
 								<p>Inherited from <a href="_equinor_fusion_web_msal.authclient-1.html">AuthClient</a>.<a href="_equinor_fusion_web_msal.authclient-1.html#getaccountbylocalid">getAccountByLocalId</a></p>
 								<ul>
 									<li>Defined in
-										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L205">
-											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:205
+										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L149">
+											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:149
 										</a>
 									</li>
 								</ul>
@@ -603,8 +603,8 @@
 								<p>Inherited from <a href="_equinor_fusion_web_msal.authclient-1.html">AuthClient</a>.<a href="_equinor_fusion_web_msal.authclient-1.html#getaccountbyusername">getAccountByUsername</a></p>
 								<ul>
 									<li>Defined in
-										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L189">
-											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:189
+										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L133">
+											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:133
 										</a>
 									</li>
 								</ul>
@@ -643,8 +643,8 @@
 								<p>Inherited from <a href="_equinor_fusion_web_msal.authclient-1.html">AuthClient</a>.<a href="_equinor_fusion_web_msal.authclient-1.html#getactiveaccount">getActiveAccount</a></p>
 								<ul>
 									<li>Defined in
-										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L214">
-											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:214
+										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L158">
+											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:158
 										</a>
 									</li>
 								</ul>
@@ -673,8 +673,8 @@
 								<p>Inherited from <a href="_equinor_fusion_web_msal.authclient-1.html">AuthClient</a>.<a href="_equinor_fusion_web_msal.authclient-1.html#getallaccounts">getAllAccounts</a></p>
 								<ul>
 									<li>Defined in
-										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L180">
-											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:180
+										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L124">
+											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:124
 										</a>
 									</li>
 								</ul>
@@ -692,41 +692,6 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-					<a name="getdiscoveredauthority" class="tsd-anchor"></a>
-					<h3>get<wbr>Discovered<wbr>Authority</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Discovered<wbr>Authority<span class="tsd-signature-symbol">(</span>requestAuthority<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Authority</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="_equinor_fusion_web_msal.authclient-1.html">AuthClient</a>.<a href="_equinor_fusion_web_msal.authclient-1.html#getdiscoveredauthority">getDiscoveredAuthority</a></p>
-								<ul>
-									<li>Defined in
-										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L232">
-											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:232
-										</a>
-									</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
-								<div class="lead">
-									<p>Used to get a discovered version of the default authority.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> requestAuthority: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography tsd-comment-text">
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Authority</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="getlogger" class="tsd-anchor"></a>
 					<h3>get<wbr>Logger</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
@@ -738,8 +703,8 @@
 								<p>Inherited from <a href="_equinor_fusion_web_msal.authclient-1.html">AuthClient</a>.<a href="_equinor_fusion_web_msal.authclient-1.html#getlogger">getLogger</a></p>
 								<ul>
 									<li>Defined in
-										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L321">
-											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:321
+										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L181">
+											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:181
 										</a>
 									</li>
 								</ul>
@@ -750,6 +715,33 @@
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Logger</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="gettokencache" class="tsd-anchor"></a>
+					<h3>get<wbr>Token<wbr>Cache</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Token<wbr>Cache<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ITokenCache</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_equinor_fusion_web_msal.authclient-1.html">AuthClient</a>.<a href="_equinor_fusion_web_msal.authclient-1.html#gettokencache">getTokenCache</a></p>
+								<ul>
+									<li>Defined in
+										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L177">
+											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:177
+										</a>
+									</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
+								<div class="lead">
+									<p>Gets the token cache for the application.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ITokenCache</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -798,8 +790,8 @@
 								<p>Inherited from <a href="_equinor_fusion_web_msal.authclient-1.html">AuthClient</a>.<a href="_equinor_fusion_web_msal.authclient-1.html#initializewrapperlibrary">initializeWrapperLibrary</a></p>
 								<ul>
 									<li>Defined in
-										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L332">
-											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:332
+										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L192">
+											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:192
 										</a>
 									</li>
 								</ul>
@@ -879,8 +871,8 @@
 								<p>Inherited from <a href="_equinor_fusion_web_msal.authclient-1.html">AuthClient</a>.<a href="_equinor_fusion_web_msal.authclient-1.html#loginpopup">loginPopup</a></p>
 								<ul>
 									<li>Defined in
-										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/PublicClientApplication.d.ts#L52">
-											node_modules/@azure/msal-browser/dist/app/PublicClientApplication.d.ts:52
+										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/PublicClientApplication.d.ts#L53">
+											node_modules/@azure/msal-browser/dist/app/PublicClientApplication.d.ts:53
 										</a>
 									</li>
 								</ul>
@@ -915,8 +907,8 @@
 								<p>Inherited from <a href="_equinor_fusion_web_msal.authclient-1.html">AuthClient</a>.<a href="_equinor_fusion_web_msal.authclient-1.html#loginredirect">loginRedirect</a></p>
 								<ul>
 									<li>Defined in
-										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/PublicClientApplication.d.ts#L44">
-											node_modules/@azure/msal-browser/dist/app/PublicClientApplication.d.ts:44
+										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/PublicClientApplication.d.ts#L45">
+											node_modules/@azure/msal-browser/dist/app/PublicClientApplication.d.ts:45
 										</a>
 									</li>
 								</ul>
@@ -954,8 +946,8 @@
 								<p>Inherited from <a href="_equinor_fusion_web_msal.authclient-1.html">AuthClient</a>.<a href="_equinor_fusion_web_msal.authclient-1.html#logout">logout</a></p>
 								<ul>
 									<li>Defined in
-										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L154">
-											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:154
+										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L106">
+											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:106
 										</a>
 									</li>
 								</ul>
@@ -990,8 +982,8 @@
 								<p>Inherited from <a href="_equinor_fusion_web_msal.authclient-1.html">AuthClient</a>.<a href="_equinor_fusion_web_msal.authclient-1.html#logoutpopup">logoutPopup</a></p>
 								<ul>
 									<li>Defined in
-										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L165">
-											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:165
+										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L117">
+											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:117
 										</a>
 									</li>
 								</ul>
@@ -1025,8 +1017,8 @@
 								<p>Inherited from <a href="_equinor_fusion_web_msal.authclient-1.html">AuthClient</a>.<a href="_equinor_fusion_web_msal.authclient-1.html#logoutredirect">logoutRedirect</a></p>
 								<ul>
 									<li>Defined in
-										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L160">
-											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:160
+										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L112">
+											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:112
 										</a>
 									</li>
 								</ul>
@@ -1061,8 +1053,8 @@
 								<p>Inherited from <a href="_equinor_fusion_web_msal.authclient-1.html">AuthClient</a>.<a href="_equinor_fusion_web_msal.authclient-1.html#removeeventcallback">removeEventCallback</a></p>
 								<ul>
 									<li>Defined in
-										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L317">
-											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:317
+										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L173">
+											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:173
 										</a>
 									</li>
 								</ul>
@@ -1096,8 +1088,8 @@
 								<p>Inherited from <a href="_equinor_fusion_web_msal.authclient-1.html">AuthClient</a>.<a href="_equinor_fusion_web_msal.authclient-1.html#setactiveaccount">setActiveAccount</a></p>
 								<ul>
 									<li>Defined in
-										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L210">
-											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:210
+										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L154">
+											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:154
 										</a>
 									</li>
 								</ul>
@@ -1131,8 +1123,8 @@
 								<p>Inherited from <a href="_equinor_fusion_web_msal.authclient-1.html">AuthClient</a>.<a href="_equinor_fusion_web_msal.authclient-1.html#setlogger">setLogger</a></p>
 								<ul>
 									<li>Defined in
-										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L326">
-											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:326
+										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L186">
+											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:186
 										</a>
 									</li>
 								</ul>
@@ -1167,8 +1159,8 @@
 								<p>Inherited from <a href="_equinor_fusion_web_msal.authclient-1.html">AuthClient</a>.<a href="_equinor_fusion_web_msal.authclient-1.html#setnavigationclient">setNavigationClient</a></p>
 								<ul>
 									<li>Defined in
-										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L337">
-											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:337
+										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L197">
+											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:197
 										</a>
 									</li>
 								</ul>
@@ -1202,8 +1194,8 @@
 								<p>Inherited from <a href="_equinor_fusion_web_msal.authclient-1.html">AuthClient</a>.<a href="_equinor_fusion_web_msal.authclient-1.html#ssosilent">ssoSilent</a></p>
 								<ul>
 									<li>Defined in
-										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L123">
-											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:123
+										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L88">
+											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:88
 										</a>
 									</li>
 								</ul>
@@ -1296,10 +1288,10 @@
 								<a href="_equinor_fusion_web_msal.authclient-1.html#getallaccounts" class="tsd-kind-icon">get<wbr>All<wbr>Accounts</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_equinor_fusion_web_msal.authclient-1.html#getdiscoveredauthority" class="tsd-kind-icon">get<wbr>Discovered<wbr>Authority</a>
+								<a href="_equinor_fusion_web_msal.authclient-1.html#getlogger" class="tsd-kind-icon">get<wbr>Logger</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_equinor_fusion_web_msal.authclient-1.html#getlogger" class="tsd-kind-icon">get<wbr>Logger</a>
+								<a href="_equinor_fusion_web_msal.authclient-1.html#gettokencache" class="tsd-kind-icon">get<wbr>Token<wbr>Cache</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="_equinor_fusion_web_msal.authclient-1.html#handleredirectpromise" class="tsd-kind-icon">handle<wbr>Redirect<wbr>Promise</a>
