@@ -7,7 +7,7 @@ export type SpacingStyleAttribute = 'padding';
 export class SpacingStyleProperty extends StyleProperty<string, SpacingStyleAttribute> {
   get attributes() {
     const { name, value } = this;
-    const attribute = StyleProperty.makeCssVar('color', name);
+    const attribute = StyleProperty.makeCssVar('spacing', name);
     return {
       padding: { attribute, value },
     };
