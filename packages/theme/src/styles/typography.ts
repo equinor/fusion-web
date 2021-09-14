@@ -1,16 +1,8 @@
-import { tokens } from '@equinor/eds-tokens';
+import { tokens, Typography } from '@equinor/eds-tokens';
 import StyleProperty, { StyleAttribute } from '../style-property';
 
-type TypographyAttribute =
-  | 'color'
-  | 'fontFamily'
-  | 'fontSize'
-  | 'fontWeight'
-  | 'letterSpacing'
-  | 'lineHeight'
-  | 'textAlign';
-
-export class TypographyStyleProperty extends StyleProperty<CSSStyleDeclaration, TypographyAttribute> {
+type TypographyAttribute = keyof Typography;
+export class TypographyStyleProperty extends StyleProperty<Typography, TypographyAttribute> {
   get attributes() {
     const { name, value } = this;
     return {
@@ -34,10 +26,6 @@ export class TypographyStyleProperty extends StyleProperty<CSSStyleDeclaration, 
         attribute: StyleProperty.makeCssVar('typography', `${name}-fontWeight`),
         value: value.fontWeight,
       },
-      letterSpacing: {
-        attribute: StyleProperty.makeCssVar('typography', `${name}-letterSpacing`),
-        value: value.letterSpacing,
-      },
       lineHeight: {
         attribute: StyleProperty.makeCssVar('typography', `${name}-lineHeight`),
         value: value.lineHeight,
@@ -45,6 +33,26 @@ export class TypographyStyleProperty extends StyleProperty<CSSStyleDeclaration, 
       textAlign: {
         attribute: StyleProperty.makeCssVar('typography', `${name}-textAlign`),
         value: value.textAlign,
+      },
+      letterSpacing: {
+        attribute: StyleProperty.makeCssVar('typography', `${name}-letterSpacing`),
+        value: value.letterSpacing,
+      },
+      fontStyle: {
+        attribute: StyleProperty.makeCssVar('typography', `${name}-fontStyle`),
+        value: value.fontStyle,
+      },
+      textTransform: {
+        attribute: StyleProperty.makeCssVar('typography', `${name}-textTransform`),
+        value: value.textTransform,
+      },
+      textDecoration: {
+        attribute: StyleProperty.makeCssVar('typography', `${name}-textDecoration`),
+        value: value.textDecoration,
+      },
+      fontFeature: {
+        attribute: StyleProperty.makeCssVar('typography', `${name}-fontFeature`),
+        value: value.fontFeature,
       },
     };
   }
