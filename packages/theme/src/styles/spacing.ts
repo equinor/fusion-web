@@ -1,5 +1,5 @@
 import { tokens } from '@equinor/eds-tokens';
-import { Properties } from 'csstype';
+import { StandardProperties } from 'csstype';
 import StyleProperty from '../style-property';
 
 export type SpacingStyleAttribute = 'padding';
@@ -13,7 +13,7 @@ export class SpacingStyleProperty extends StyleProperty<string, SpacingStyleAttr
     };
   }
 
-  get style(): Properties {
+  get style(): StandardProperties {
     return {
       padding: this.value,
     };

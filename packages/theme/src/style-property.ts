@@ -1,4 +1,4 @@
-import { Properties } from 'csstype';
+import { StandardProperties } from 'csstype';
 
 const camel2kebab = (x: string) => x.replace(/([a-z0-9])([A-Z])/g, '$1-$2').toLowerCase();
 
@@ -9,9 +9,9 @@ export abstract class StyleProperty<T = any, A extends string = string> {
     return `--fusion-${element}__${module}`;
   }
 
-  static makeCss(obj: Properties): string {
+  static makeCss(obj: StandardProperties): string {
     return Object.keys(obj)
-      .map((x) => `${camel2kebab(x)}: ${obj[x as keyof Properties]}`)
+      .map((x) => `${camel2kebab(x)}: ${obj[x as keyof StandardProperties]}`)
       .join(';');
   }
 
@@ -27,7 +27,7 @@ export abstract class StyleProperty<T = any, A extends string = string> {
 
   abstract get attributes(): Record<A, StyleAttribute>;
 
-  get style(): Properties {
+  get style(): StandardProperties {
     const { value, attributes } = this;
     return {
       ...value,
