@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.4](https://github.com/equinor/fusion-web/compare/@equinor/fusion-web-theme@0.1.3...@equinor/fusion-web-theme@0.1.4) (2021-09-15)
+
+
+### Bug Fixes
+
+* exclude absolute css props ([bb3cd1f](https://github.com/equinor/fusion-web/commit/bb3cd1f186e83ba1ac3c8088f4fdb6e5903b091f))
+
+
+
+
+
 ## [0.1.3](https://github.com/equinor/fusion-web/compare/@equinor/fusion-web-theme@0.1.2...@equinor/fusion-web-theme@0.1.3) (2021-09-14)
 
 
