@@ -1,12 +1,7 @@
-import { tokens } from '@equinor/eds-tokens';
+import { tokens, Typography } from '@equinor/eds-tokens';
 import StyleProperty, { StyleAttribute } from '../style-property';
 
-type Typography = Pick<
-  CSSStyleDeclaration,
-  'color' | 'fontFamily' | 'fontSize' | 'fontWeight' | 'letterSpacing' | 'lineHeight' | 'textAlign'
->;
-type TypographyAttribute = keyof Pick<Typography, 'fontSize' | 'color'>;
-
+type TypographyAttribute = keyof Typography;
 export class TypographyStyleProperty extends StyleProperty<Typography, TypographyAttribute> {
   get attributes() {
     const { name, value } = this;
@@ -19,15 +14,51 @@ export class TypographyStyleProperty extends StyleProperty<Typography, Typograph
         }),
         base: true,
       },
+      fontFamily: {
+        attribute: StyleProperty.makeCssVar('typography', `${name}-fontFamily`),
+        value: value.fontFamily,
+      },
       fontSize: {
         attribute: StyleProperty.makeCssVar('typography', `${name}-fontSize`),
         value: value.fontSize,
+      },
+      fontWeight: {
+        attribute: StyleProperty.makeCssVar('typography', `${name}-fontWeight`),
+        value: value.fontWeight,
+      },
+      lineHeight: {
+        attribute: StyleProperty.makeCssVar('typography', `${name}-lineHeight`),
+        value: value.lineHeight,
+      },
+      textAlign: {
+        attribute: StyleProperty.makeCssVar('typography', `${name}-textAlign`),
+        value: value.textAlign,
+      },
+      letterSpacing: {
+        attribute: StyleProperty.makeCssVar('typography', `${name}-letterSpacing`),
+        value: value.letterSpacing,
+      },
+      fontStyle: {
+        attribute: StyleProperty.makeCssVar('typography', `${name}-fontStyle`),
+        value: value.fontStyle,
+      },
+      textTransform: {
+        attribute: StyleProperty.makeCssVar('typography', `${name}-textTransform`),
+        value: value.textTransform,
+      },
+      textDecoration: {
+        attribute: StyleProperty.makeCssVar('typography', `${name}-textDecoration`),
+        value: value.textDecoration,
+      },
+      fontFeature: {
+        attribute: StyleProperty.makeCssVar('typography', `${name}-fontFeature`),
+        value: value.fontFeature,
       },
     };
   }
 }
 
-const createStyleProperty = <T extends Record<string, Typography | any>, Tkey extends keyof T>(
+const createStyleProperty = <T extends Record<string, TypographyAttribute | any>, Tkey extends keyof T>(
   obj: T,
   name: string
 ): Record<Tkey, TypographyStyleProperty> =>
