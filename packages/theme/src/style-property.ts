@@ -4,6 +4,9 @@ const camel2kebab = (x: string) => x.replace(/([a-z0-9])([A-Z])/g, '$1-$2').toLo
 
 export type StyleAttribute = { attribute: string; value?: string | number; base?: boolean };
 
+// Type of style(). Previous type caused an error in dependant apps. 
+type CSSProperties = Omit<StandardProperties, 'fontSizeAdjust'>;
+
 export abstract class StyleProperty<T = any, A extends string = string> {
   static makeCssVar(element: string, module: string): string {
     return `--fusion-${element}__${module}`;
@@ -27,7 +30,7 @@ export abstract class StyleProperty<T = any, A extends string = string> {
 
   abstract get attributes(): Record<A, StyleAttribute>;
 
-  get style(): StandardProperties {
+  get style(): CSSProperties {
     const { value, attributes } = this;
     return {
       ...value,
