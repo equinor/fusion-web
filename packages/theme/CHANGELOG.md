@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.6](https://github.com/equinor/fusion-web/compare/@equinor/fusion-web-theme@0.1.5...@equinor/fusion-web-theme@0.1.6) (2021-09-27)
+
+
+### Bug Fixes
+
+* resolves css property typing error ([c6e84ac](https://github.com/equinor/fusion-web/commit/c6e84acb052e84e6c2cd8b32397b35859bdb6446))
+
+
+
+
+
+## [0.1.5](https://github.com/equinor/fusion-web/compare/@equinor/fusion-web-theme@0.1.4...@equinor/fusion-web-theme@0.1.5) (2021-09-16)
+
+
+### Bug Fixes
+
+* added missing attributes and used correct typing ([7a4ff6f](https://github.com/equinor/fusion-web/commit/7a4ff6fa0653a5ca989c6e2e16b55ad8461bd68b))
+* added missing typography attributes ([63ff51d](https://github.com/equinor/fusion-web/commit/63ff51d5910a07af7c1503a6edd39f51a8ed06bb))
+
+
+
+
+
 ## [0.1.4](https://github.com/equinor/fusion-web/compare/@equinor/fusion-web-theme@0.1.3...@equinor/fusion-web-theme@0.1.4) (2021-09-15)
 
 
