@@ -1,6 +1,5 @@
 import { tokens } from '@equinor/eds-tokens';
-import { StyleAttribute, StyleProperty } from '../style-property';
-import { StandardProperties } from 'csstype';
+import { StyleAttribute, StyleProperty, CSSProperties } from '../style-property';
 
 export type ElevationType = keyof typeof tokens.elevation;
 export type ElevationAttribute = 'shadow';
@@ -13,7 +12,7 @@ export class ElevationStyleProperty extends StyleProperty<string, ElevationAttri
       shadow: { attribute, value },
     };
   }
-  get style(): StandardProperties {
+  get style(): CSSProperties {
     return {
       boxShadow: StyleProperty.makeVariable(this.attributes.shadow),
     };

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.7](https://github.com/equinor/fusion-web/compare/@equinor/fusion-web-theme@0.1.6...@equinor/fusion-web-theme@0.1.7) (2021-11-16)
+
+
+### Bug Fixes
+
+* fix typing of theme ([3be20f3](https://github.com/equinor/fusion-web/commit/3be20f3183b64714822ce09dd8bb627d793964fc))
+
+
+
+
+
 ## [0.1.6](https://github.com/equinor/fusion-web/compare/@equinor/fusion-web-theme@0.1.5...@equinor/fusion-web-theme@0.1.6) (2021-09-27)
 
 

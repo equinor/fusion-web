@@ -1,6 +1,6 @@
 {
   "name": "@equinor/fusion-web-theme",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "fusion web theme",
   "keywords": [
     "style",
@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "@equinor/eds-tokens": "0.5.5",
-    "csstype": "^3.0.9"
+    "csstype": "^3.0.10"
   },
   "devDependencies": {
     "rimraf": "^3.0.2"
