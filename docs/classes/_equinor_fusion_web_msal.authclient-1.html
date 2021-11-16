@@ -166,11 +166,14 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_equinor_fusion_web_msal.authclient-1.html#acquiretokenredirect" class="tsd-kind-icon">acquireTokenRedirect</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_equinor_fusion_web_msal.authclient-1.html#acquiretokensilent" class="tsd-kind-icon">acquireTokenSilent</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_equinor_fusion_web_msal.authclient-1.html#addeventcallback" class="tsd-kind-icon">addEventCallback</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_equinor_fusion_web_msal.authclient-1.html#disableaccountstorageevents" class="tsd-kind-icon">disableAccountStorageEvents</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_equinor_fusion_web_msal.authclient-1.html#enableaccountstorageevents" class="tsd-kind-icon">enableAccountStorageEvents</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_equinor_fusion_web_msal.authclient-1.html#getaccountbyhomeid" class="tsd-kind-icon">getAccountByHomeId</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_equinor_fusion_web_msal.authclient-1.html#getaccountbylocalid" class="tsd-kind-icon">getAccountByLocalId</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_equinor_fusion_web_msal.authclient-1.html#getaccountbyusername" class="tsd-kind-icon">getAccountByUsername</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_equinor_fusion_web_msal.authclient-1.html#getactiveaccount" class="tsd-kind-icon">getActiveAccount</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_equinor_fusion_web_msal.authclient-1.html#getallaccounts" class="tsd-kind-icon">getAllAccounts</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_equinor_fusion_web_msal.authclient-1.html#getconfiguration" class="tsd-kind-icon">getConfiguration</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_equinor_fusion_web_msal.authclient-1.html#getlogger" class="tsd-kind-icon">getLogger</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_equinor_fusion_web_msal.authclient-1.html#gettokencache" class="tsd-kind-icon">getTokenCache</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_equinor_fusion_web_msal.authclient-1.html#handleredirectpromise" class="tsd-kind-icon">handleRedirectPromise</a></li>
@@ -514,6 +517,60 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="disableaccountstorageevents" class="tsd-anchor"></a>
+					<h3>disable<wbr>Account<wbr>Storage<wbr>Events</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">disable<wbr>Account<wbr>Storage<wbr>Events<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_equinor_fusion_web_msal.authclient-1.html">AuthClient</a>.<a href="_equinor_fusion_web_msal.authclient-1.html#disableaccountstorageevents">disableAccountStorageEvents</a></p>
+								<ul>
+									<li>Defined in
+										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L181">
+											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:181
+										</a>
+									</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
+								<div class="lead">
+									<p>Removes event listener that emits an event when a user account is added or removed from localstorage in a different browser tab or window</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="enableaccountstorageevents" class="tsd-anchor"></a>
+					<h3>enable<wbr>Account<wbr>Storage<wbr>Events</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">enable<wbr>Account<wbr>Storage<wbr>Events<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_equinor_fusion_web_msal.authclient-1.html">AuthClient</a>.<a href="_equinor_fusion_web_msal.authclient-1.html#enableaccountstorageevents">enableAccountStorageEvents</a></p>
+								<ul>
+									<li>Defined in
+										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L177">
+											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:177
+										</a>
+									</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
+								<div class="lead">
+									<p>Adds event listener that emits an event when a user account is added or removed from localstorage in a different browser tab or window</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="getaccountbyhomeid" class="tsd-anchor"></a>
 					<h3>get<wbr>Account<wbr>ByHome<wbr>Id</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
@@ -692,6 +749,33 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="getconfiguration" class="tsd-anchor"></a>
+					<h3>get<wbr>Configuration</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Configuration<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BrowserConfiguration</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_equinor_fusion_web_msal.authclient-1.html">AuthClient</a>.<a href="_equinor_fusion_web_msal.authclient-1.html#getconfiguration">getConfiguration</a></p>
+								<ul>
+									<li>Defined in
+										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L209">
+											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:209
+										</a>
+									</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
+								<div class="lead">
+									<p>Returns the configuration object</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">BrowserConfiguration</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="getlogger" class="tsd-anchor"></a>
 					<h3>get<wbr>Logger</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
@@ -703,8 +787,8 @@
 								<p>Inherited from <a href="_equinor_fusion_web_msal.authclient-1.html">AuthClient</a>.<a href="_equinor_fusion_web_msal.authclient-1.html#getlogger">getLogger</a></p>
 								<ul>
 									<li>Defined in
-										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L181">
-											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:181
+										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L189">
+											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:189
 										</a>
 									</li>
 								</ul>
@@ -730,8 +814,8 @@
 								<p>Inherited from <a href="_equinor_fusion_web_msal.authclient-1.html">AuthClient</a>.<a href="_equinor_fusion_web_msal.authclient-1.html#gettokencache">getTokenCache</a></p>
 								<ul>
 									<li>Defined in
-										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L177">
-											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:177
+										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L185">
+											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:185
 										</a>
 									</li>
 								</ul>
@@ -790,8 +874,8 @@
 								<p>Inherited from <a href="_equinor_fusion_web_msal.authclient-1.html">AuthClient</a>.<a href="_equinor_fusion_web_msal.authclient-1.html#initializewrapperlibrary">initializeWrapperLibrary</a></p>
 								<ul>
 									<li>Defined in
-										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L192">
-											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:192
+										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L200">
+											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:200
 										</a>
 									</li>
 								</ul>
@@ -1123,8 +1207,8 @@
 								<p>Inherited from <a href="_equinor_fusion_web_msal.authclient-1.html">AuthClient</a>.<a href="_equinor_fusion_web_msal.authclient-1.html#setlogger">setLogger</a></p>
 								<ul>
 									<li>Defined in
-										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L186">
-											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:186
+										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L194">
+											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:194
 										</a>
 									</li>
 								</ul>
@@ -1159,8 +1243,8 @@
 								<p>Inherited from <a href="_equinor_fusion_web_msal.authclient-1.html">AuthClient</a>.<a href="_equinor_fusion_web_msal.authclient-1.html#setnavigationclient">setNavigationClient</a></p>
 								<ul>
 									<li>Defined in
-										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L197">
-											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:197
+										<a href="https://github.com/equinor/fusion-web/blob/master/node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts#L205">
+											node_modules/@azure/msal-browser/dist/app/ClientApplication.d.ts:205
 										</a>
 									</li>
 								</ul>
@@ -1273,6 +1357,12 @@
 								<a href="_equinor_fusion_web_msal.authclient-1.html#addeventcallback" class="tsd-kind-icon">add<wbr>Event<wbr>Callback</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_equinor_fusion_web_msal.authclient-1.html#disableaccountstorageevents" class="tsd-kind-icon">disable<wbr>Account<wbr>Storage<wbr>Events</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_equinor_fusion_web_msal.authclient-1.html#enableaccountstorageevents" class="tsd-kind-icon">enable<wbr>Account<wbr>Storage<wbr>Events</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_equinor_fusion_web_msal.authclient-1.html#getaccountbyhomeid" class="tsd-kind-icon">get<wbr>Account<wbr>ByHome<wbr>Id</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
@@ -1286,6 +1376,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_equinor_fusion_web_msal.authclient-1.html#getallaccounts" class="tsd-kind-icon">get<wbr>All<wbr>Accounts</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_equinor_fusion_web_msal.authclient-1.html#getconfiguration" class="tsd-kind-icon">get<wbr>Configuration</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_equinor_fusion_web_msal.authclient-1.html#getlogger" class="tsd-kind-icon">get<wbr>Logger</a>
