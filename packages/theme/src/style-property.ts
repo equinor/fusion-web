@@ -1,20 +1,24 @@
-import { StandardProperties } from 'csstype';
+import type { Properties } from 'csstype';
+
+export interface CSSProperties extends Properties {
+  [k: string]: unknown | CSSProperties | StyleProperty;
+}
 
 const camel2kebab = (x: string) => x.replace(/([a-z0-9])([A-Z])/g, '$1-$2').toLowerCase();
 
 export type StyleAttribute = { attribute: string; value?: string | number; base?: boolean };
 
-// Type of style(). Previous type caused an error in dependant apps. 
-type CSSProperties = Omit<StandardProperties, 'fontSizeAdjust'>;
+// Type of style(). Previous type caused an error in dependant apps.
+// type CSSProperties = Omit<StandardProperties, 'fontSizeAdjust'>;
 
 export abstract class StyleProperty<T = any, A extends string = string> {
   static makeCssVar(element: string, module: string): string {
     return `--fusion-${element}__${module}`;
   }
 
-  static makeCss(obj: StandardProperties): string {
+  static makeCss(obj: CSSProperties): string {
     return Object.keys(obj)
-      .map((x) => `${camel2kebab(x)}: ${obj[x as keyof StandardProperties]}`)
+      .map((x) => `${camel2kebab(x)}: ${obj[x as keyof CSSProperties]}`)
       .join(';');
   }
 

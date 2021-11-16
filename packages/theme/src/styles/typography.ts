@@ -1,5 +1,5 @@
 import { tokens, Typography } from '@equinor/eds-tokens';
-import StyleProperty, { StyleAttribute } from '../style-property';
+import { StyleProperty, StyleAttribute } from '../style-property';
 
 type TypographyAttribute = keyof Typography;
 export class TypographyStyleProperty extends StyleProperty<Typography, TypographyAttribute> {
