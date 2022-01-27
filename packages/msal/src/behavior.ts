@@ -11,4 +11,4 @@ export type AuthBehavior = 'popup' | 'redirect';
 /**
  * Default behavior for login and acquisition of token
  */
-export const defaultBehavior: AuthBehavior = 'popup';
+export const defaultBehavior: AuthBehavior = 'redirect';
