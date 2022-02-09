@@ -1,4 +1,4 @@
-import { spacing } from './spacing';
+import { spacing } from '../src/styles/spacing';
 describe('API resource collection', () => {
   it('should create styles', () => {
     (Object.keys(spacing.comfortable) as Array<keyof typeof spacing.comfortable>).forEach((key) => {

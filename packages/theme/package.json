@@ -13,7 +13,8 @@
   "modules": "dist/index.js",
   "main": "dist/index.js",
   "files": [
-    "dist/"
+    "dist/",
+    "src/"
   ],
   "publishConfig": {
     "access": "public"
