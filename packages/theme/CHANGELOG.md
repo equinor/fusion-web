@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.1.8 (2022-02-09)
+
+
+### Bug Fixes
+
+* expose src folder for source mapping ([6ce228b](https://github.com/equinor/fusion-web/commit/6ce228b8df88b778efb371fd8a12bb1ad100605a))
+
+
+
+
+
 ## [0.1.7](https://github.com/equinor/fusion-web/compare/@equinor/fusion-web-theme@0.1.6...@equinor/fusion-web-theme@0.1.7) (2021-11-16)
 
 
