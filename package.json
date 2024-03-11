@@ -21,26 +21,11 @@
     "lint:report": "pnpm lint --output-file eslint.report.json --format json"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "^11.0.0",
-		"@commitlint/config-conventional": "^11.0.0",
 		"@equinor/eslint-config-fusion": "0.0.3",
 		"eslint": "^7.13.0",
-		"husky": "^4.3.0",
 		"lerna": "^8.1.2",
-		"lint-staged": "^10.5.1",
 		"prettier": "^2.1.2",
 		"tslib": "^2.2.0",
 		"typescript": "^4.0.5"
-	},
-	"husky": {
-		"hooks": {
-			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-			"pre-commit": "lint-staged"
-		}
-	},
-	"lint-staged": {
-		"./packages/**/src/**/*.{js,ts,tsx}": [
-			"eslint --quiet --fix"
-		]
 	}
 }
