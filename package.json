@@ -18,7 +18,7 @@
 	"packageManager": "pnpm@8",
 	"scripts": {
 		"lint": "eslint '{packages,cookbooks}/**/src/**/*.{ts,tsx}'",
-    "lint:report": "pnpm lint --output-file eslint.report.json --format json"
+		"lint:report": "pnpm lint --output-file eslint.report.json --format json"
 	},
 	"devDependencies": {
 		"@equinor/eslint-config-fusion": "0.0.3",
@@ -26,6 +26,6 @@
 		"lerna": "^8.1.2",
 		"prettier": "^2.1.2",
 		"tslib": "^2.2.0",
-		"typescript": "^4.0.5"
+		"typescript": "^5.4.2"
 	}
 }
