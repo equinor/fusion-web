@@ -43,6 +43,6 @@
 	"dependencies": {
 		"@equinor/eds-tokens": "0.5.5",
 		"csstype": "^3.0.10",
-		"rimraf": "^3.0.2"
+		"rimraf": "^5.0.5"
 	}
 }
