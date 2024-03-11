@@ -16,6 +16,10 @@
 		"pnpm": ">=4"
 	},
 	"packageManager": "pnpm@8",
+	"scripts": {
+		"lint": "eslint '{packages,cookbooks}/**/src/**/*.{ts,tsx}'",
+    "lint:report": "pnpm lint --output-file eslint.report.json --format json"
+	},
 	"devDependencies": {
 		"@commitlint/cli": "^11.0.0",
 		"@commitlint/config-conventional": "^11.0.0",
