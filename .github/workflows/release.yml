@@ -36,9 +36,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
 
       - name: Install Node Dependencies
-        run: npm ci
-        env:
-          CI: TRUE
+        run: pnpm i
 
       - name: Release packages
         run: npx lerna publish from-package --yes --no-verify-access

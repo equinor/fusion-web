@@ -2,8 +2,6 @@ name: Lint project files
 
 on: 
   pull_request:
-    paths:
-      - '**.ts'
 
 jobs:
   eslint:
@@ -13,21 +11,14 @@ jobs:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v2
       - uses: actions/setup-node@v3
-
-      - name: Cache Node Modules
-        id: cache-node
-        uses: actions/cache@v3
         with:
           cache: 'pnpm'
 
       - name: Install Node Dependencies
-        if: steps.cache-node.outputs.cache-hit != 'true'
-        run: npm ci
-        env:
-          CI: TRUE
+        run: pnpm i
 
       - name: Build project
-        run: npx tsc -b
+        run: pnpm lint:report
 
       - name: Save Code Linting Report JSON
         run: npm run lint:report
@@ -37,7 +28,7 @@ jobs:
         uses: ataylorme/eslint-annotate-action@1.1.2
         with:
           repo-token: "${{ github.token }}"
-          report-json: "eslint-report.log.json"
+          report-json: "eslint.report.json"
 
       - name: Upload ESLint report
         uses: actions/upload-artifact@v2
