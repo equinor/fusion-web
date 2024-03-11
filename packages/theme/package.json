@@ -1,6 +1,6 @@
 {
   "name": "@equinor/fusion-web-theme",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "fusion web theme",
   "keywords": [
     "style",
@@ -25,7 +25,6 @@
     "directory": "packages/theme"
   },
   "scripts": {
-    "test": "jest --passWithNoTests",
     "lint": "eslint 'src/**/*.{js,ts,tsx}' --fix",
     "clean": "rimraf ./dist",
     "build": "tsc -b",
