@@ -21,10 +21,7 @@ jobs:
           cache: 'pnpm'
 
       - name: Install Node Dependencies
-        if: steps.cache-node.outputs.cache-hit != 'true'
-        run: npm ci
-        env:
-          CI: TRUE
+        run: pnpm i
 
       - name: Build project
         run: npx tsc -b
