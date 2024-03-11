@@ -26,7 +26,7 @@ const createStyleProp = (type: ElevationType): ElevationStyleProperty => {
 const types = Object.keys(tokens.elevation) as ElevationType[];
 export const elevation = types.reduce(
   (obj, type) => Object.assign(obj, { [type]: createStyleProp(type) }),
-  {} as Record<ElevationType, ElevationStyleProperty>
+  {} as Record<ElevationType, ElevationStyleProperty>,
 );
 
 export const elevationVariables = ElevationStyleProperty.extractVariables(elevation);
