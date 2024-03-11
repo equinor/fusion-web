@@ -16,7 +16,7 @@ jobs:
 
       - name: Cache Node Modules
         id: cache-node
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           cache: 'pnpm'
 
