@@ -1,5 +1,6 @@
 {
   "version": "independent",
+  "npmClient": "pnpm",
   "command": {
     "version": {
       "allowBranch": ["master", "feat/*", "feature/*"],
@@ -15,10 +16,5 @@
       "ignoreChanges": ["*.spec.ts", "*.md"],
       "message": "chore(release): publish"
     }
-  },
-  "packages": [
-    "packages/*",
-    "packages/*/*",
-    "demo/*"
-  ]
+  }
 }

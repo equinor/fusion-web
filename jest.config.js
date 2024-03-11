@@ -1,1 +1,0 @@
-module.exports = require('@equinor/jest-config-fusion');
