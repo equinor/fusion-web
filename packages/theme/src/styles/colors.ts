@@ -30,11 +30,11 @@ export class ColorStyleProperty extends StyleProperty<Color, ColorStyleAttribute
 
 const createStyleProperty = <T extends Record<string, Color>, Tkey extends keyof T>(
   obj: T,
-  name: string
+  name: string,
 ): Record<Tkey, ColorStyleProperty> =>
   Object.keys(obj).reduce(
     (cur, key) => Object.assign(cur, { [key]: new ColorStyleProperty(`${name}-${key}`, obj[key]) }),
-    {} as Record<Tkey, ColorStyleProperty>
+    {} as Record<Tkey, ColorStyleProperty>,
   );
 
 export const colors = {
@@ -47,7 +47,7 @@ export const colors = {
 
 export const colorVariables = Object.values(colors).reduce(
   (cur, value) => cur.concat(ColorStyleProperty.extractVariables(value)),
-  [] as string[]
+  [] as string[],
 );
 
 export default colors;

@@ -58,13 +58,14 @@ export class TypographyStyleProperty extends StyleProperty<Typography, Typograph
   }
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const createStyleProperty = <T extends Record<string, TypographyAttribute | any>, Tkey extends keyof T>(
   obj: T,
-  name: string
+  name: string,
 ): Record<Tkey, TypographyStyleProperty> =>
   Object.keys(obj).reduce(
     (cur, key) => Object.assign(cur, { [key]: new TypographyStyleProperty(`${name}-${key}`, obj[key]) }),
-    {} as Record<Tkey, TypographyStyleProperty>
+    {} as Record<Tkey, TypographyStyleProperty>,
   );
 
 export const typography = {
@@ -84,7 +85,7 @@ export const baseTypographyColor: StyleAttribute = {
 export const typographyVariables = [
   ...Object.values(typography).reduce(
     (cur, value) => cur.concat(StyleProperty.extractVariables(value)),
-    [] as string[]
+    [] as string[],
   ),
   [baseTypographyColor.attribute, baseTypographyColor.value].join(':'),
 ];

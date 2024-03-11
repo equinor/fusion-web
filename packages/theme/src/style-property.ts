@@ -11,6 +11,7 @@ export type StyleAttribute = { attribute: string; value?: string | number; base?
 // Type of style(). Previous type caused an error in dependant apps.
 // type CSSProperties = Omit<StandardProperties, 'fontSizeAdjust'>;
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export abstract class StyleProperty<T = any, A extends string = string> {
   static makeCssVar(element: string, module: string): string {
     return `--fusion-${element}__${module}`;
@@ -30,7 +31,10 @@ export abstract class StyleProperty<T = any, A extends string = string> {
     return Object.values(styles).reduce((cur, value) => cur.concat(value.variables), [] as string[]);
   }
 
-  constructor(public readonly name: string, public readonly value: T) {}
+  constructor(
+    public readonly name: string,
+    public readonly value: T,
+  ) {}
 
   abstract get attributes(): Record<A, StyleAttribute>;
 
@@ -40,7 +44,7 @@ export abstract class StyleProperty<T = any, A extends string = string> {
       ...value,
       ...(Object.keys(attributes) as A[]).reduce(
         (cur, key) => Object.assign(cur, { [key]: StyleProperty.makeVariable(attributes[key]) }),
-        {}
+        {},
       ),
     };
   }
@@ -51,7 +55,7 @@ export abstract class StyleProperty<T = any, A extends string = string> {
       ...style,
       ...(Object.keys(attributes) as A[]).reduce(
         (cur, key) => Object.assign(cur, { [key]: StyleProperty.makeVariable(attributes[key]) }),
-        {}
+        {},
       ),
     });
   }

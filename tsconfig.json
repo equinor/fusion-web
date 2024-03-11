@@ -5,7 +5,7 @@
     "noEmit": true,
   },
   "include": [
-    "packages/**/src/**/*", "packages/theme/__tmp__/spacing.spec.ts",
+    "packages/**/src/**/*",
   ],
   "exclude": [
     "node_modules",

@@ -16,6 +16,7 @@
     "dist/",
     "src/"
   ],
+  "type": "module",
   "publishConfig": {
     "access": "public"
   },
@@ -39,6 +40,7 @@
     "csstype": "^3.0.10"
   },
   "devDependencies": {
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "typescript": "^5.4.2"
   }
 }

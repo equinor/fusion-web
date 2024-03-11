@@ -21,11 +21,11 @@ export class SpacingStyleProperty extends StyleProperty<string, SpacingStyleAttr
 
 const createStyleProperty = <T extends Record<string, string>, Tkey extends keyof T>(
   obj: T,
-  name: string
+  name: string,
 ): Record<Tkey, SpacingStyleProperty> =>
   Object.keys(obj).reduce(
     (cur, key) => Object.assign(cur, { [key]: new SpacingStyleProperty(`${name}-${key}`, obj[key]) }),
-    {} as Record<Tkey, SpacingStyleProperty>
+    {} as Record<Tkey, SpacingStyleProperty>,
   );
 
 export const spacing = {
@@ -34,7 +34,7 @@ export const spacing = {
 
 export const spacingVariables = Object.values(spacing).reduce(
   (cur, value) => cur.concat(SpacingStyleProperty.extractVariables(value)),
-  [] as string[]
+  [] as string[],
 );
 
 export default spacing;
