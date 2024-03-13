@@ -10,13 +10,11 @@
   "author": "odin thomas rochmann <odin.rochmann@gmail.com>",
   "homepage": "https://github.com/equinor/fusion-web/tree/master/packages/theme#readme",
   "license": "ISC",
-  "modules": "dist/index.js",
   "main": "dist/index.js",
   "files": [
     "dist/",
     "src/"
   ],
-  "type": "module",
   "publishConfig": {
     "access": "public"
   },
